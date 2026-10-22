@@ -1,0 +1,40 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css");
+html {
+  scroll-behavior: smooth;
+}
+
+#body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 15px;
+    background-image: url("../test/images/farmlink.jpg");
+    
+}
+.logo {
+    background-color: brown;
+}
+nav {
+    position: fixed;
+    width: 100%;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+footer {
+    margin-top: auto;
+    padding: 10px;
+    background-color: rgba(9, 185, 23, 0.795);
+}
+footer  p {
+text-align: center;
+
+}
+button {
+    background-color: blueviolet;
+}
+#header {
+    margin-top: 90px;
+    align-items: center;
+}

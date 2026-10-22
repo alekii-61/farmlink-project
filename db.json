@@ -1,0 +1,28 @@
+{
+    "products":[
+        {
+            "id":1,
+            "name": "maize plant ",
+            "price": "Ksh 50000  per acre",
+            "available":"50  acres available ",
+            "farmerName":"James",
+            "location":"Narok county"
+        },
+         {
+            "id":1,
+            "name": "tomatoe plant ",
+            "price": "Ksh 30000  per acre",
+            "available":"30  acres available ",
+            "farmerName":"mary",
+            "location":"Nakuru county"
+         },
+         {
+         "id":1,
+         "name": "onion plant ",
+            "price": "Ksh 40000  per acre",
+            "available":"40  acres available ",
+            "farmerName":"wilson",
+            "location":"Laikipia county"
+         }
+    ]
+}
