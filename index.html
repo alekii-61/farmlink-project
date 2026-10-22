@@ -1,38 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Famlink</title>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link href="https://fonts.googleapis.com/css2" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farmlink-Kenya</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-<body id="body">
-    <nav class="logo">
-        <h4>Farmlink-Kenya</h4>
-        <ul>
-            <li><a href="#body">Home</a></li>
-            <li><a href="#header">farmer&products</a></li>
-            <li><a href="#contact">contact-us</a></li>
-        </ul>
-    </nav>
-    
+<body>
+  <nav class="home">
+    <h2 class="logo">Farmlink-Kenya</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li>Market</li>
+      <li><a href="#contact">contact us</a></li>
+    </ul>
+    <button id="getStartedBtn">Get Started</button>
+  </nav>
 
-    <header id="header">
-      
-
-    </header>
-    <div class="farmer&products">
-
+  <section class="hero">
+    <h1>Connect Farmers to Buyers Directly</h1>
+    <p>Fresh maize, tomato, onion from Narok & Nakuru</p>
+    <p>You can also list your products and we help you market them</p>
+    <img src="test/images/farmlink.jpg"/>
+    <button id="exploreBtn">Explore Products</button>
+  </section>
+  <section id="products">
+    <h2>Available Products</h2>
+    <div id="productList">
     </div>
-    <footer class="contact"> 
+  </section>
+  <section id="add-product">
+    <h2>Add New Product</h2>
+    <form id="productForm">
+      <input id="name" type="text" placeholder="Product Name e.g mango plant" required />
+      <input id="acres" type="text" placeholder="Size e.g 10 acres" required />
+      <input id="farmer" type="text" placeholder="Farmer Name" required />
+      <input id="county" type="text" placeholder="County e.g Narok" required />
+      <input id="price" type="text" placeholder="Price e.g Ksh 200" required />
+      <input id="farmer-contact" type="text" placeholder="phone e.g +254711111111" required/>
+      <button type="submit">Add Product</button>
+    </form>
+  </section>
+
+  <div id="signupModal">
+    <div class="modal-content">
+      <span id="closeModal"></span>
+      <h2>Join Farmlink-Kenya</h2>
+      <p>Choose how you want to continue</p>
+      <div class="role-cards">
+        <div class="role-card" onclick="selectRole('farmer')">
+          <h3> I'm a Farmer</h3>
+          <p>Sell your harvest directly</p>
+          <button>Sign up as Farmer</button>
+        </div>
+        <div class="role-card" onclick="selectRole('buyer')">
+          <h3>I'm a Buyer</h3>
+          <p>Buy fresh from farmers</p>
+          <button>Sign up as Buyer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="contact">
+        <p>all rights reserved&Created-by : Alex</p> 
         <p>@ 2026Farmlink-Kenya</p>
-        <p><button>contact us </button></p>
-    </footer>
-    
+        <p><button id="contact">contact us </button></p>
+  </footer>
 
-
-
-    <script src="js/index.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>

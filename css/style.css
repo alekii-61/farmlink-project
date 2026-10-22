@@ -1,40 +1,90 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css");
-html {
-  scroll-behavior: smooth;
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: white;
 }
 
-#body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 15px;
-    background-image: url("../test/images/farmlink.jpg");
-    
-}
-.logo {
-    background-color: brown;
-}
 nav {
-    position: fixed;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: fixed;
+  background-color: antiquewhite;
+  width: 100%;
 }
 nav ul {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: center;
+  justify-content: center;
+}
+
+button {
+  background: green;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+}
+
+.hero {
+  margin-top: 90px;
+  text-align: center;
+}
+
+.hero img {
+  width: 50%;
+  align-items: center;
+}
+#products {
+  margin-top: 30px;
+}
+
+#productList {
+  margin-top: 15px;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#productForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 300px;
+}
+
+#productForm input {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+#signupModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  width: 300px;
+}
+
+#closeModal {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
 }
 footer {
-    margin-top: auto;
-    padding: 10px;
-    background-color: rgba(9, 185, 23, 0.795);
-}
-footer  p {
-text-align: center;
-
-}
-button {
-    background-color: blueviolet;
-}
-#header {
-    margin-top: 90px;
-    align-items: center;
+  background-color: darkgreen;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 20px;
 }
