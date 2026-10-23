@@ -58,6 +58,7 @@ function selectRole(role) {
   }
 }
 
+
 loadProducts();
 const contactUs =document.getElementById("contact")
 contactUs.addEventListener("click",() => {alert("thank you for reaching out please send you email via farmlinkkenya@gmail.com and we will be more than glad to help you")});
