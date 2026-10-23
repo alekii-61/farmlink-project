@@ -50,9 +50,9 @@ document.getElementById("productForm").addEventListener("submit", (event) => {
 });
 
 function selectRole(role) {
-  document.getElementById("signupModal").style.display = "none";
+  document.getElementById("signupModal")
   if (role === "farmer") {
-    document.getElementById("add-product").scrollIntoView({ behavior: "smooth" });
+    document.getElementById("add-product")
   } else {
     loadProducts();
   }
