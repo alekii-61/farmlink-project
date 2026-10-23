@@ -1,9 +1,10 @@
 function loadProducts() {
-  fetch("http://localhost:5001/products")
+  fetch("https://alekii-61.github.io/farmlink-project/db.json")
     .then(res => res.json())
     .then(products => {
+      let allProducts = products.products || products;
       let html = "";
-      products.forEach(product => {
+      allProducts.forEach(product => {
         html += `
           <div class="product-card">
             <h3>${product.name}</h3>
@@ -16,6 +17,10 @@ function loadProducts() {
         `;
       });
       document.getElementById("productList").innerHTML = html;
+    })
+    .catch(error => {
+      console.error("Error loading products:", error);
+      document.getElementById("productList").innerHTML = "<p>Failed to load products. Please try again later.</p>";
     });
 }
 
