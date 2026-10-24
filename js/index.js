@@ -24,18 +24,7 @@ function loadProducts() {
     });
 }
 
-document.getElementById("exploreBtn").addEventListener("click", () => {
-  loadProducts();
-  document.getElementById("products").scrollIntoView({ behavior: "smooth" });
-});
 
-document.getElementById("getStartedBtn").addEventListener("click", () => {
-  document.getElementById("signupModal").style.display = "flex";
-});
-
-document.getElementById("closeModal").addEventListener("click", () => {
-  document.getElementById("signupModal").style.display = "none";
-});
 
 document.getElementById("productForm").addEventListener("submit", (event) => {
   event.preventDefault();
@@ -59,7 +48,7 @@ function selectRole(role) {
   if (role === "farmer") {
     document.getElementById("add-product")
   } else {
-    loadProducts();
+   return loadProducts();
   }
 }
 
@@ -67,3 +56,29 @@ function selectRole(role) {
 loadProducts();
 const contactUs =document.getElementById("contact")
 contactUs.addEventListener("click",() => {alert("thank you for reaching out please send you email via farmlinkkenya@gmail.com and we will be more than glad to help you")});
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("exploreBtn")?.addEventListener("click", () => {
+    loadProducts();
+    document.getElementById("products").scrollIntoView({ behavior: "smooth" });
+  });
+
+  document.getElementById("getStartedBtn").addEventListener("click", () => {
+    document.getElementById("signupModal").style.display = "flex";
+  });
+
+  document.getElementById("closeModal").addEventListener("click", () => {
+    document.getElementById("signupModal").style.display = "none";
+  });
+  document.getElementById("farmerCard").addEventListener("click", () => {
+  document.getElementById("signupModal").style.display = "none";
+  document.getElementById("add-product").scrollIntoView({behavior: "smooth"});
+
+
+document.getElementById("buyerCard").addEventListener("click", () => {
+  document.getElementById("signupModal").style.display = "none";
+  document.getElementById("products").scrollIntoView({behavior: "smooth"})
+  
+});
+});
+});

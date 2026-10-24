@@ -62,19 +62,19 @@
 </section>
   <div id="signupModal">
     <div class="modal-content">
-      <span id="closeModal"></span>
+      <span id="closeModal" >&times;</span>
       <h2>Join Farmlink-Kenya</h2>
       <p>Choose how you want to continue</p>
       <div class="role-cards">
-        <div class="role-card" onclick="selectRole('farmer')">
+        <div class="role-card" id="farmerCard">
           <h3> I'm a Farmer</h3>
           <p>Sell your harvest directly</p>
-          <button>Sign up as Farmer</button>
+          <button id="farmerBtn">Sign up as Farmer</button>
         </div>
-        <div class="role-card" onclick="selectRole('buyer')">
+        <div class="role-card" id="buyerCard">
           <h3>I'm a Buyer</h3>
           <p>Buy fresh from farmers</p>
-          <button>Sign up as Buyer</button>
+          <button id="buyerBtn">Sign up as Buyer</button>
         </div>
       </div>
     </div>
